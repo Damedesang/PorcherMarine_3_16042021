@@ -1,0 +1,30 @@
+/* #region Mequiaqueries */
+
+$breakpoints: ("tablette":481px,
+    "desktop":1281px,
+);
+
+@mixin media-min($key) {
+    @media screen and (min-width: map-get($breakpoints, $key)) {
+        & {
+            @content;
+        }
+    }
+}
+
+/* #endregion */
+
+/* #region Couleurs */
+
+$couleurPrimaire : #9356DC;
+$couleurSecondaire : #FF79DA;
+$couleurTertiaire : #99E2D0;
+
+/* #endregion */
+
+/* #region Polices */
+
+$policeTitres : "Shrikhand";
+$policeTexte : "Roboto";
+
+/* #endregion */

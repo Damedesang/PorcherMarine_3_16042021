@@ -1,0 +1,62 @@
+@import "./variables&mixin";
+@import "./animations";
+
+/* #region Généralités */
+body {
+    margin: 0px;
+}
+
+/* #endregion */
+
+/* #region Header */
+header {
+    padding: 20px;
+    box-shadow: 8px 8px 15px #fffbfb;
+}
+
+.logoheader {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 40%;
+
+        @include media-min("desktop") {
+            width: 392px;
+            height: 68px;
+        }
+    }
+}
+
+/* #endregion */
+
+/* #region Footer */
+
+footer {
+    background-color: rgb(59, 53, 53);
+    padding: 10px;
+}
+
+.listefooter {
+    color: white;
+    font-family: $policeTexte;
+    padding-left: 5%;
+
+    .logofooter {
+        display: flex;
+        justify-content: flex-start;
+        font-family: $policeTitres;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .fas {
+        width: 25px;
+    }
+
+}
+
+/* #endregion */

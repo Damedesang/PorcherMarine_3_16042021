@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* #region Mequiaqueries */
+/* #endregion */
+/* #region Couleurs */
+/* #endregion */
+/* #region Polices */
+/* #endregion */
+/* #region Généralités */
+body {
+  margin: 0px;
+}
+
+/* #endregion */
+/* #region Header */
+header {
+  padding: 20px;
+  -webkit-box-shadow: 8px 8px 15px #fffbfb;
+          box-shadow: 8px 8px 15px #fffbfb;
+}
+
+.logoheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logoheader img {
+  width: 40%;
+}
+
+@media screen and (min-width: 1281px) {
+  .logoheader img {
+    width: 392px;
+    height: 68px;
+  }
+}
+
+/* #endregion */
+/* #region Footer */
+footer {
+  background-color: #3b3535;
+  padding: 10px;
+}
+
+.listefooter {
+  color: white;
+  font-family: "Roboto";
+  padding-left: 5%;
+}
+
+.listefooter .logofooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Shrikhand";
+}
+
+.listefooter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.listefooter .fas {
+  width: 25px;
+}
+
+/* #endregion */
+/*# sourceMappingURL=style.css.map */
