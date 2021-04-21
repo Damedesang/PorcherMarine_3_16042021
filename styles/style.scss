@@ -1,4 +1,4 @@
-@import "./variables&mixin";
+@import "./variablesmixin";
 @import "./animations";
 
 /* #region Généralités */
@@ -27,6 +27,145 @@ header {
         }
     }
 }
+
+/* #endregion */
+
+/* #region Contenu */
+
+#contenu {
+    width: 100%;
+
+    h1,
+    h2,
+    p {
+        font-family: $policeTexte;
+    }
+}
+
+/* #region Partie 1 */
+#partie1 {
+    background-color: rgb(243, 243, 243);
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.explication {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p,
+    h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    button {
+        background-color: $couleurSecondaire;
+        border-radius: 25px;
+        width: 50%;
+        color: white;
+        border-color: white;
+    }
+}
+
+.localisation {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(216, 215, 215);
+}
+
+/* #endregion */
+
+/* #region Partie 2 */
+
+#partie2 {
+
+    .restaurant,
+    .choix,
+    .degustez {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* #endregion */
+
+/* #region Partie 3 */
+
+#partie3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h1 {
+        margin-left: 5%;
+    }
+
+    h2,
+    p {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        object-position: bottom;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        .precision {
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+        }
+    }
+
+    #note {
+        img {
+            object-position: center;
+        }
+    }
+
+    #palette,
+    #note,
+    #francaise,
+    #delice {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding-bottom: 50px;
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 25px;
+        height: 250px;
+        box-shadow: 8px 8px 15px #d1cfcf;
+    }
+
+    .favoris {
+        padding-top: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* #endregion */
 
 /* #endregion */
 

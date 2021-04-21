@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/* #region Mequiaqueries */
-/* #endregion */
-/* #region Couleurs */
-/* #endregion */
-/* #region Polices */
-/* #endregion */
 /* #region Généralités */
 body {
   margin: 0px;
@@ -38,6 +32,170 @@ header {
   }
 }
 
+/* #endregion */
+/* #region Contenu */
+#contenu {
+  width: 100%;
+}
+
+#contenu h1,
+#contenu h2,
+#contenu p {
+  font-family: "Roboto";
+}
+
+/* #region Partie 1 */
+#partie1 {
+  background-color: #f3f3f3;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.explication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explication p,
+.explication h1 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.explication button {
+  background-color: #FF79DA;
+  border-radius: 25px;
+  width: 50%;
+  color: white;
+  border-color: white;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d8d7d7;
+}
+
+/* #endregion */
+/* #region Partie 2 */
+#partie2 .restaurant,
+#partie2 .choix,
+#partie2 .degustez {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* #endregion */
+/* #region Partie 3 */
+#partie3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f3f3f3;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#partie3 h1 {
+  margin-left: 5%;
+}
+
+#partie3 h2,
+#partie3 p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#partie3 img {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#partie3 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#partie3 .info .precision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15px;
+}
+
+#partie3 #note img {
+  -o-object-position: center;
+     object-position: center;
+}
+
+#partie3 #palette,
+#partie3 #note,
+#partie3 #francaise,
+#partie3 #delice {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 25px;
+  height: 250px;
+  -webkit-box-shadow: 8px 8px 15px #d1cfcf;
+          box-shadow: 8px 8px 15px #d1cfcf;
+}
+
+#partie3 .favoris {
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* #endregion */
 /* #endregion */
 /* #region Footer */
 footer {
