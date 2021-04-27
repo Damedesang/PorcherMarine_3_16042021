@@ -11,7 +11,8 @@ body {
 /* #region Header */
 header {
     padding: 20px;
-    box-shadow: 8px 8px 15px #fffbfb;
+    box-shadow: 0px 8px 15px #636161;
+    position: relative;
 }
 
 .logoheader {
@@ -30,9 +31,9 @@ header {
 
 /* #endregion */
 
-/* #region Contenu */
+/* #region Contenu Index */
 
-#contenu {
+#contenuindex {
     width: 100%;
 
     h1,
@@ -43,40 +44,52 @@ header {
 }
 
 /* #region Partie 1 */
+
 #partie1 {
-    background-color: rgb(243, 243, 243);
-    padding-top: 40px;
+    background-color: $grisclair;
     padding-bottom: 40px;
 
-}
-
-.explication {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    p,
-    h1 {
-        margin-left: 5%;
-        margin-right: 5%;
+    .emplacement {
+        p {
+            font-weight: bold;
+        }
     }
 
-    button {
-        background-color: $couleurSecondaire;
-        border-radius: 25px;
-        width: 50%;
-        color: white;
-        border-color: white;
+
+    .explication {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p,
+        h1 {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        button {
+            background-color: $couleurSecondaire;
+            border-radius: 25px;
+            width: 50%;
+            color: white;
+            border-color: white;
+        }
     }
-}
 
-.localisation {
+    .localisation {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(216, 215, 215);
+        display: flex;
+        justify-content: center;
+        background-color: $grisfoncee;
+        position: relative;
+    }
+
+    .fas {
+        position: absolute;
+        left: 158px;
+        bottom: 20px;
+    }
 }
 
 /* #endregion */
@@ -85,13 +98,61 @@ header {
 
 #partie2 {
 
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
     .restaurant,
     .choix,
     .degustez {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: $grisclair;
+        height: 50px;
+        width: 340px;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        position: relative;
     }
+
+    p {
+        margin: 0px;
+        font-weight: bold;
+    }
+
+    .numero {
+        background-color: $couleurPrimaire;
+        position: absolute;
+        border-radius: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 5px;
+        right: 343px;
+
+        p {
+            color: white;
+        }
+    }
+
+    .fas {
+        margin-right: 15px;
+        color: rgb(143, 139, 139);
+    }
+
+    .fas:active {
+        color: $couleurPrimaire;
+    }
+
 }
+
+
 
 /* #endregion */
 
@@ -156,23 +217,59 @@ header {
         margin-bottom: 25px;
         height: 250px;
         box-shadow: 8px 8px 15px #d1cfcf;
+        position: relative;
     }
 
     .favoris {
-        padding-top: 3%;
-        padding-left: 10%;
-        padding-right: 10%;
+        left: 85%;
+        position: absolute;
+        margin-top: -26px;
+    }
+
+    figure {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .nouveau {
+        background-color: $couleurTertiaire;
+        position: absolute;
+        margin-top: 2%;
+        margin-left: 78%;
+        padding: 5px;
+        border-radius: 3px;
+
+        P {
+            font-weight: bold;
+        }
     }
 }
 
+
+
+
 /* #endregion */
+
+/* #endregion */
+
+/* #region Contenu Menus */
+
+#contenumenus {
+    width: 100%;
+
+    h1,
+    h2,
+    p {
+        font-family: $policeTexte;
+    }
+}
 
 /* #endregion */
 
 /* #region Footer */
 
 footer {
-    background-color: rgb(59, 53, 53);
+    background-color: $grisnoir;
     padding: 10px;
 }
 
