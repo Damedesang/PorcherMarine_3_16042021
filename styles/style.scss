@@ -15,6 +15,12 @@ header {
     position: relative;
 }
 
+.fleche {
+    position: absolute;
+    top: 21px;
+    left: 8%;
+}
+
 .logoheader {
     display: flex;
     justify-content: center;
@@ -40,6 +46,7 @@ header {
     h2,
     p {
         font-family: $policeTexte;
+        font-weight: bold;
     }
 }
 
@@ -61,6 +68,8 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+
 
         p,
         h1 {
@@ -101,6 +110,10 @@ header {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
+
+    h1 {
+        margin-left: 30px;
+    }
 
     .restaurant,
     .choix,
@@ -190,6 +203,8 @@ header {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        font-weight: normal;
+        margin-left: 15px;
 
         .precision {
             display: flex;
@@ -223,12 +238,19 @@ header {
     .favoris {
         left: 85%;
         position: absolute;
-        margin-top: -26px;
+        margin-top: -40px;
     }
 
     figure {
         padding: 0px;
         margin: 0px;
+    }
+
+    figcaption {
+        margin-left: 15px;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
     }
 
     .nouveau {
@@ -243,6 +265,10 @@ header {
             font-weight: bold;
         }
     }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 
@@ -256,21 +282,117 @@ header {
 
 #contenumenus {
     width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
 
-    h1,
-    h2,
-    p {
-        font-family: $policeTexte;
+/* #region Présentation */
+.presentation {
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
 /* #endregion */
+
+/* #region Titres des menus */
+
+.menus {
+    width: 100%;
+    position: absolute;
+    background-color: $grisclair;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    top: 265px;
+
+    h2 {
+        margin-left: 5%;
+    }
+
+    .titresmenus {
+        position: relative;
+
+        .favorismenus {
+            position: absolute;
+            left: 85%;
+            top: 5px;
+        }
+
+        h1 {
+            margin-left: 30px;
+            font-weight: bold;
+            font-family: $policeTitres;
+        }
+    }
+
+    button {
+        background-color: $couleurSecondaire;
+        border-radius: 25px;
+        width: 50%;
+        color: white;
+        border-color: white;
+    }
+
+}
+
+
+/* #endregion */
+
+/* #region Blocs de menus */
+.entrees,
+.plats,
+.desserts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocmenu {
+    background-color: white;
+    border-radius: 15px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $policeTexte;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 15px #636161;
+
+    .blocnom {
+        width: 80%;
+    }
+
+    h2,
+    p {
+        margin-left: 15px;
+    }
+
+    h2 {
+        margin-bottom: 0px;
+    }
+
+    p {
+        margin-top: 2px;
+    }
+}
+
+
+
+/* #endregion */
+
+/* #endregion */
+
+
 
 /* #region Footer */
 
 footer {
     background-color: $grisnoir;
     padding: 10px;
+    // position: absolute;
+    // width: 100%;
 }
 
 .listefooter {
