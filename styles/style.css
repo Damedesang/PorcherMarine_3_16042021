@@ -2,6 +2,7 @@
 /* #region Généralités */
 body {
   margin: 0px;
+  background-color: #f3f3f3;
 }
 
 /* #endregion */
@@ -12,6 +13,7 @@ header {
           box-shadow: 0px 8px 15px #636161;
   position: relative;
   height: 65px;
+  background-color: white;
 }
 
 .fleche {
@@ -47,7 +49,12 @@ header {
   width: 100%;
 }
 
-#contenuindex h1,
+#contenuindex h1 {
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-left: 44px;
+}
+
 #contenuindex h2,
 #contenuindex p {
   font-family: "Roboto";
@@ -192,6 +199,37 @@ header {
   background-color: #f3f3f3;
   padding-top: 40px;
   padding-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1281px) {
+  #partie3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  #partie3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 #partie3 h1 {
@@ -264,6 +302,28 @@ header {
   position: relative;
 }
 
+@media screen and (min-width: 1281px) {
+  #partie3 #palette,
+  #partie3 #note,
+  #partie3 #francaise,
+  #partie3 #delice {
+    width: 40%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  #partie3 #palette,
+  #partie3 #note,
+  #partie3 #francaise,
+  #partie3 #delice {
+    width: 40%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
+
 #partie3 .favoris {
   left: 85%;
   position: absolute;
@@ -330,6 +390,20 @@ header {
   margin-left: 5%;
 }
 
+@media screen and (min-width: 1281px) {
+  .menus h2 {
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .menus h2 {
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
 .menus .titresmenus {
   position: relative;
 }
@@ -344,6 +418,7 @@ header {
   margin-left: 30px;
   font-weight: bold;
   font-family: "Shrikhand";
+  padding-top: 10px;
 }
 
 .menus button {
@@ -366,9 +441,42 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1281px) {
+  .entrees,
+  .plats,
+  .desserts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .entrees,
+  .plats,
+  .desserts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
 }
 
 .blocmenu {
@@ -392,6 +500,45 @@ header {
           box-shadow: 0px 8px 15px #636161;
 }
 
+@media screen and (min-width: 1281px) {
+  .blocmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 330px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .blocmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 220px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
 .blocmenu .blocnom {
   width: 80%;
 }
@@ -401,12 +548,36 @@ header {
   margin-left: 15px;
 }
 
+@media screen and (min-width: 1281px) {
+  .blocmenu h2,
+  .blocmenu p {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .blocmenu h2,
+  .blocmenu p {
+    margin-left: 0px;
+  }
+}
+
 .blocmenu h2 {
   margin-bottom: 0px;
 }
 
 .blocmenu p {
   margin-top: 2px;
+}
+
+.commandes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* #endregion */
