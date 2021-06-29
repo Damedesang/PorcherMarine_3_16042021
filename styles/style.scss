@@ -1,7 +1,7 @@
 @import "./variablesmixin";
 @import "./animations";
 
-/* #region Généralités */
+/* #region Généralités et Loader */
 body {
     margin: 0px;
     background-color: #f3f3f3;
@@ -14,24 +14,26 @@ body {
         justify-content: center;
         width: 90%;
         height: 90%;
+        animation: loaderDisparait 1s 3s both;
+        position: relative;
+        top: 576px;
 
         .fas {
             display: flex;
             justify-content: center;
             position: relative;
-            left: 70px;
-            top: 35px;
+            left: 165px;
+            top: 120px;
             color: $couleurSecondaire;
         }
 
         #loader {
-            width: 100px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
             border: 3px solid #f3f3f3;
-            border-top: 3px solid $couleurPrimaire;
+            border-top: 3px dotted $couleurPrimaire;
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            // background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
         }
 
     }
@@ -76,6 +78,10 @@ header {
 
 #contenuIndex {
     width: 100%;
+    position: relative;
+    bottom: 305px;
+    opacity: 0;
+    animation: menuApparition 3s 3.5s both;
 
     h1 {
 
