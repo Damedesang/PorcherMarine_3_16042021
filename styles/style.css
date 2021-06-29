@@ -3,16 +3,18 @@
 body {
   margin: 0px;
   background-color: #f3f3f3;
+  max-width: 1920px;
+  margin: auto;
 }
 
 /* #endregion */
 /* #region Header */
 header {
   padding: 16px;
-  -webkit-box-shadow: 0px 8px 15px #636161;
-          box-shadow: 0px 8px 15px #636161;
+  -webkit-box-shadow: 0 0 15px 0 #636161;
+          box-shadow: 0 0 15px 0 #636161;
   position: relative;
-  height: 65px;
+  height: 85px;
   background-color: white;
 }
 
@@ -23,7 +25,7 @@ header {
   font-size: 1.5rem;
 }
 
-.logoheader {
+.logoHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,12 +34,12 @@ header {
           justify-content: center;
 }
 
-.logoheader img {
+.logoHeader img {
   width: 40%;
 }
 
 @media screen and (min-width: 1281px) {
-  .logoheader img {
+  .logoHeader img {
     width: 494px;
     height: 86px;
   }
@@ -45,18 +47,18 @@ header {
 
 /* #endregion */
 /* #region Contenu Index */
-#contenuindex {
+#contenuIndex {
   width: 100%;
 }
 
-#contenuindex h1 {
+#contenuIndex h1 {
   font-family: "Roboto";
   font-weight: bold;
   margin-left: 44px;
 }
 
-#contenuindex h2,
-#contenuindex p {
+#contenuIndex h2,
+#contenuIndex p {
   font-family: "Roboto";
   font-weight: bold;
 }
@@ -92,11 +94,20 @@ header {
 }
 
 #partie1 .explication button {
-  background-color: #FF79DA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   border-radius: 25px;
   width: 50%;
   color: white;
-  border-color: white;
+  border: none;
+  -webkit-box-shadow: 0 5px 5px 0 black;
+          box-shadow: 0 5px 5px 0 black;
+}
+
+#partie1 .explication button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0 7px 7px 0 black;
+          box-shadow: 0 7px 7px 0 black;
 }
 
 #partie1 .localisation {
@@ -119,9 +130,11 @@ header {
 /* #endregion */
 /* #region Partie 2 */
 #partie2 {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 }
 
 #partie2 h1 {
@@ -362,7 +375,7 @@ header {
 /* #endregion */
 /* #endregion */
 /* #region Contenu Menus */
-#contenumenus {
+#contenuMenu {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -404,17 +417,17 @@ header {
   }
 }
 
-.menus .titresmenus {
+.menus .titresMenu {
   position: relative;
 }
 
-.menus .titresmenus .favorismenus {
+.menus .titresMenu .favorisMenu {
   position: absolute;
   left: 85%;
   top: 5px;
 }
 
-.menus .titresmenus h1 {
+.menus .titresMenu h1 {
   margin-left: 30px;
   font-weight: bold;
   font-family: "Shrikhand";
@@ -445,6 +458,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 1281px) {
@@ -479,7 +495,7 @@ header {
   }
 }
 
-.blocmenu {
+.blocMenu {
   background-color: white;
   border-radius: 15px;
   width: 90%;
@@ -501,7 +517,7 @@ header {
 }
 
 @media screen and (min-width: 1281px) {
-  .blocmenu {
+  .blocMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -513,14 +529,14 @@ header {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    width: 330px;
+    width: 330px !important;
     margin-left: 2%;
     margin-right: 2%;
   }
 }
 
 @media screen and (min-width: 481px) {
-  .blocmenu {
+  .blocMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -539,34 +555,34 @@ header {
   }
 }
 
-.blocmenu .blocnom {
+.blocMenu .blocNom {
   width: 80%;
 }
 
-.blocmenu h2,
-.blocmenu p {
+.blocMenu h2,
+.blocMenu p {
   margin-left: 15px;
 }
 
 @media screen and (min-width: 1281px) {
-  .blocmenu h2,
-  .blocmenu p {
+  .blocMenu h2,
+  .blocMenu p {
     margin-left: 0px;
   }
 }
 
 @media screen and (min-width: 481px) {
-  .blocmenu h2,
-  .blocmenu p {
+  .blocMenu h2,
+  .blocMenu p {
     margin-left: 0px;
   }
 }
 
-.blocmenu h2 {
+.blocMenu h2 {
   margin-bottom: 0px;
 }
 
-.blocmenu p {
+.blocMenu p {
   margin-top: 2px;
 }
 
@@ -580,6 +596,16 @@ header {
   margin-bottom: 50px;
 }
 
+.commandes button {
+  width: 15%;
+}
+
+@media screen and (min-width: 1281px) {
+  .commandes button {
+    width: 20%;
+  }
+}
+
 /* #endregion */
 /* #endregion */
 /* #region Footer */
@@ -588,14 +614,14 @@ footer {
   padding: 10px;
 }
 
-.listefooter {
+.listeFooter {
   color: white;
   font-family: "Roboto";
   padding-left: 5%;
 }
 
 @media screen and (min-width: 481px) {
-  .listefooter {
+  .listeFooter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -611,7 +637,7 @@ footer {
 }
 
 @media screen and (min-width: 1281px) {
-  .listefooter {
+  .listeFooter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -626,7 +652,7 @@ footer {
   }
 }
 
-.listefooter .logofooter {
+.listeFooter .logoFooter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,12 +662,12 @@ footer {
   font-family: "Shrikhand";
 }
 
-.listefooter ul {
+.listeFooter ul {
   list-style: none;
   padding: 0;
 }
 
-.listefooter .fas {
+.listeFooter .fas {
   width: 25px;
 }
 

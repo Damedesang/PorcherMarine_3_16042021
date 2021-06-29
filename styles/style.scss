@@ -5,6 +5,8 @@
 body {
     margin: 0px;
     background-color: #f3f3f3;
+    max-width: 1920px;
+    margin: auto;
 }
 
 /* #endregion */
@@ -12,9 +14,9 @@ body {
 /* #region Header */
 header {
     padding: 16px;
-    box-shadow: 0px 8px 15px #636161;
+    box-shadow: 0 0 15px 0 #636161;
     position: relative;
-    height: 65px;
+    height: 85px;
     background-color: white;
 }
 
@@ -25,7 +27,7 @@ header {
     font-size: 1.5rem;
 }
 
-.logoheader {
+.logoHeader {
     display: flex;
     justify-content: center;
 
@@ -43,7 +45,7 @@ header {
 
 /* #region Contenu Index */
 
-#contenuindex {
+#contenuIndex {
     width: 100%;
 
     h1 {
@@ -58,6 +60,7 @@ header {
         font-family: $policeTexte;
         font-weight: bold;
     }
+
 }
 
 /* #region Partie 1 */
@@ -88,11 +91,17 @@ header {
         }
 
         button {
-            background-color: $couleurSecondaire;
+            background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             border-radius: 25px;
             width: 50%;
             color: white;
-            border-color: white;
+            border: none;
+            box-shadow: 0 5px 5px 0 rgb(0, 0, 0 / 10%);
+
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0 7px 7px 0 rgb(0, 0, 0 / 50%);
+            }
         }
     }
 
@@ -117,9 +126,11 @@ header {
 
 #partie2 {
 
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
 
     h1 {
         margin-left: 30px;
@@ -317,7 +328,7 @@ header {
 
 /* #region Contenu Menus */
 
-#contenumenus {
+#contenuMenu {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -359,10 +370,10 @@ header {
         }
     }
 
-    .titresmenus {
+    .titresMenu {
         position: relative;
 
-        .favorismenus {
+        .favorisMenu {
             position: absolute;
             left: 85%;
             top: 5px;
@@ -397,6 +408,7 @@ header {
     flex-direction: column;
     margin-bottom: 20px;
     align-items: center;
+    justify-content: center;
 
     @include media-min("desktop") {
         display: flex;
@@ -411,7 +423,7 @@ header {
     }
 }
 
-.blocmenu {
+.blocMenu {
     background-color: white;
     border-radius: 15px;
     width: 90%;
@@ -428,7 +440,7 @@ header {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 330px;
+        width: 330px !important;
         margin-left: 2%;
         margin-right: 2%;
     }
@@ -446,7 +458,7 @@ header {
 
     }
 
-    .blocnom {
+    .blocNom {
         width: 80%;
     }
 
@@ -476,6 +488,14 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    button {
+        width: 15%;
+
+        @include media-min("desktop") {
+            width: 20%;
+        }
+    }
 }
 
 
@@ -494,7 +514,7 @@ footer {
     // width: 100%;
 }
 
-.listefooter {
+.listeFooter {
     color: white;
     font-family: $policeTexte;
     padding-left: 5%;
@@ -513,7 +533,7 @@ footer {
         padding-left: 0%;
     }
 
-    .logofooter {
+    .logoFooter {
         display: flex;
         justify-content: flex-start;
         font-family: $policeTitres;
