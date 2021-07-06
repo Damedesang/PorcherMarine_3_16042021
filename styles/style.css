@@ -56,6 +56,42 @@
   }
 }
 
+@-webkit-keyframes apparitionMenuDivers {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apparitionMenuDivers {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes apparitionBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apparitionBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* #region Généralités et Loader */
 body {
   margin: 0px;
@@ -71,8 +107,6 @@ body .loaderTotal {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
-  height: 90%;
   -webkit-animation: loaderDisparait 1s 3s both;
           animation: loaderDisparait 1s 3s both;
   position: relative;
@@ -561,6 +595,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: apparitionMenuDivers 3s;
+          animation: apparitionMenuDivers 3s;
 }
 
 @media screen and (min-width: 1281px) {
@@ -614,6 +650,24 @@ header {
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 8px 15px #636161;
           box-shadow: 0px 8px 15px #636161;
+}
+
+.blocMenu:hover + .box {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  background-color: #9356DC;
+}
+
+.blocMenu .box {
+  width: 100%;
+  height: 40%;
+  background-color: #99E2D0;
+  -webkit-animation: apparitionBox 5s;
+          animation: apparitionBox 5s;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
 }
 
 @media screen and (min-width: 1281px) {
