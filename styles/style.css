@@ -631,6 +631,15 @@ header {
   }
 }
 
+.blocMenu:hover {
+  height: 20%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  background-color: pink;
+}
+
 .blocMenu {
   background-color: white;
   border-radius: 15px;
@@ -650,12 +659,6 @@ header {
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 8px 15px #636161;
           box-shadow: 0px 8px 15px #636161;
-}
-
-.blocMenu:hover + .box {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  background-color: #9356DC;
 }
 
 .blocMenu .box {
@@ -823,6 +826,89 @@ footer {
 
 .listeFooter .fas {
   width: 25px;
+}
+
+/* #endregion */
+/* #region Test */
+.starter__menu {
+  border: 1px solid black;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.starter__menu .description__plat {
+  color: blue;
+  text-overflow: ellipsis;
+}
+
+.starter__menu .anim__cercle {
+  background-color: #99E2D0;
+  width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.starter__menu:hover .anim__cercle {
+  width: 20%;
+  background-color: pink;
+  -webkit-animation: moveBox 2s;
+          animation: moveBox 2s;
+  -webkit-animation-play-state: paused 2s;
+          animation-play-state: paused 2s;
+}
+
+.starter__menu:hover .fas-check-circle {
+  -webkit-animation: moveCircle 1.25s;
+          animation: moveCircle 1.25s;
+}
+
+@-webkit-keyframes moveCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes moveCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes moveBox {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes moveBox {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 /* #endregion */
