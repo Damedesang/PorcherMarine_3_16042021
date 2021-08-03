@@ -391,6 +391,7 @@ header {
 
     h2 {
         margin-left: 5%;
+        margin-bottom: 0px;
 
         @include media-min("desktop") {
             text-align: center;
@@ -505,17 +506,14 @@ header {
     }
 
     .blocNom {
-        max-width: 80%;
+        width: calc(80%);
         max-height: 80px;
-        white-space:nowrap;
         overflow : hidden;
         text-overflow: ellipsis;
-        display:inline-block;
+        min-width: 0;
 
         @include media-min("desktop") {
             height: 80%;
-            white-space:wrap;
-            overflow :visible;
         }
     
         @include media-min("tablette") {
@@ -523,7 +521,7 @@ header {
         }
     }
     .blocPrix{
-        max-width: 20%;
+        width: calc(20%);
         max-height: 80px;
         display: flex;
         justify-content: center;
@@ -599,6 +597,24 @@ header {
 
     p {
         margin-top: 2px;
+    }
+}
+
+hr {
+    position:relative;
+    right: 150px;
+    border:none;
+    height: 5px;
+    width: 40px;
+    background: $couleurTertiaire;
+    margin-bottom:20px;
+
+    @include media-min("desktop") {
+        right: 0px;
+    }
+
+    @include media-min("tablette") {
+        right: 0px;
     }
 }
 
