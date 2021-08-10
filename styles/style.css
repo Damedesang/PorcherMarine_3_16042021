@@ -635,18 +635,6 @@ header {
           animation: apparitionMenuDivers 3s;
 }
 
-.blocMenu .box {
-  width: 100%;
-  height: 10%;
-  background-color: #99E2D0;
-  -webkit-animation: apparitionBox 5s;
-          animation: apparitionBox 5s;
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
-}
-
 @media screen and (min-width: 1281px) {
   .blocMenu {
     display: -webkit-box;
@@ -853,10 +841,29 @@ hr {
 }
 
 .commandes button {
-  width: 15%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  border-radius: 25px;
+  width: 200px !important;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 0 5px 5px 0 black;
+          box-shadow: 0 5px 5px 0 black;
+}
+
+.commandes button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0 7px 7px 0 black;
+          box-shadow: 0 7px 7px 0 black;
 }
 
 @media screen and (min-width: 1281px) {
+  .commandes button {
+    width: 250px !important;
+  }
+}
+
+@media screen and (min-width: 481px) {
   .commandes button {
     width: 20%;
   }
