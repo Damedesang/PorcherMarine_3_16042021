@@ -677,8 +677,6 @@ header {
 .blocMenu .blocNom {
   width: calc(80%);
   max-height: 80px;
-  overflow: hidden;
-  text-overflow: ellipsis;
   min-width: 0;
 }
 
@@ -722,23 +720,12 @@ header {
 
 .blocMenu .box {
   background-color: #99E2D0;
+  color: white !important;
   width: 0;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
+  display: none;
 }
 
 @media screen and (min-width: 1281px) {
@@ -764,6 +751,20 @@ header {
 .blocMenu:hover .box {
   width: 25%;
   height: 100%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #99E2D0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -783,13 +784,19 @@ header {
 
 .blocMenu h2,
 .blocMenu p {
+  margin-top: 2px;
   margin-left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 1281px) {
   .blocMenu h2,
   .blocMenu p {
     margin-left: 0px;
+    white-space: normal;
+    overflow: visible;
   }
 }
 
@@ -797,15 +804,13 @@ header {
   .blocMenu h2,
   .blocMenu p {
     margin-left: 0px;
+    white-space: normal;
+    overflow: visible;
   }
 }
 
 .blocMenu h2 {
   margin-bottom: 0px;
-}
-
-.blocMenu p {
-  margin-top: 2px;
 }
 
 hr {
@@ -847,14 +852,14 @@ hr {
   width: 200px !important;
   color: white;
   border: none;
-  -webkit-box-shadow: 0 5px 5px 0 black;
-          box-shadow: 0 5px 5px 0 black;
+  -webkit-box-shadow: 0 5px 5px 0 #d8d72b;
+          box-shadow: 0 5px 5px 0 #d8d72b;
 }
 
 .commandes button:hover {
   opacity: 0.8;
-  -webkit-box-shadow: 0 7px 7px 0 black;
-          box-shadow: 0 7px 7px 0 black;
+  -webkit-box-shadow: 0 7px 7px 0 #d8d70b;
+          box-shadow: 0 7px 7px 0 #d8d70b;
 }
 
 @media screen and (min-width: 1281px) {

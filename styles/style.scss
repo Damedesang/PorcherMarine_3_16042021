@@ -498,8 +498,6 @@ header {
     .blocNom {
         width: calc(80%);
         max-height: 80px;
-        overflow : hidden;
-        text-overflow: ellipsis;
         min-width: 0;
 
         @include media-min("desktop") {
@@ -527,14 +525,12 @@ header {
     }
     .box{
         background-color: $couleurTertiaire;
+        color:white !important;
         width: 0;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
+        display:none;
 
         @include media-min("desktop") {
             height: 0;
@@ -553,14 +549,19 @@ header {
     
         }
 
-
     }
 
     &:hover .box{
         width: 25%;
         height: 100%;
+        display:block;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         background-color: $couleurTertiaire;
         transition:all 1s ease;
+
         @include media-min("desktop") {
             width: 100%;
         }
@@ -572,14 +573,23 @@ header {
 
     h2,
     p {
+        margin-top: 2px;
         margin-left: 15px;
+        white-space:nowrap;
+        overflow : hidden;
+        text-overflow: ellipsis;
 
         @include media-min("desktop") {
             margin-left: 0px;
+            white-space:normal;
+            overflow : visible;
         }
 
         @include media-min("tablette") {
             margin-left: 0px;
+            white-space:normal;
+            overflow : visible;
+    
         }
     }
 
@@ -587,9 +597,6 @@ header {
         margin-bottom: 0px;
     }
 
-    p {
-        margin-top: 2px;
-    }
 }
 
 hr {
@@ -621,11 +628,11 @@ hr {
         width: 200px !important;
         color: white;
         border: none;
-        box-shadow: 0 5px 5px 0 rgb(0, 0, 0 / 10%); //#d8d7d7 couleur voulu
+        box-shadow: 0 5px 5px 0 rgb(216, 215, 215 / 5%); //#d8d7d7 couleur voulu
 
         &:hover {
             opacity: 0.8;
-            box-shadow: 0 7px 7px 0 rgb(0, 0, 0 / 50%);
+            box-shadow: 0 7px 7px 0 rgb(216, 215, 215 / 20%);
         }
 
         @include media-min("desktop") {
