@@ -79,6 +79,7 @@ body {
   margin: 0px;
   background-color: #f3f3f3;
   max-width: 1920px;
+  min-width: 400px;
   margin: auto;
 }
 
@@ -220,6 +221,18 @@ header {
           box-shadow: 0 5px 5px 0 black;
 }
 
+@media screen and (min-width: 1281px) {
+  #partie1 .explication button {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #partie1 .explication button {
+    width: 200px;
+  }
+}
+
 #partie1 .explication button:hover {
   opacity: 0.8;
   -webkit-box-shadow: 0 7px 7px 0 black;
@@ -347,7 +360,7 @@ header {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   #partie3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -442,7 +455,7 @@ header {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   #partie3 #palette,
   #partie3 #note,
   #partie3 #francaise,
@@ -527,7 +540,7 @@ header {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .menus h2 {
     text-align: center;
     margin-left: 0px;
@@ -578,6 +591,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 1281px) {
@@ -596,7 +610,7 @@ header {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .entrees,
   .plats,
   .desserts {
@@ -649,12 +663,13 @@ header {
             align-items: center;
     text-align: center;
     width: 330px !important;
+    height: 250px;
     margin-left: 2%;
     margin-right: 2%;
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .blocMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -668,7 +683,7 @@ header {
             align-items: center;
     text-align: center;
     width: 30%;
-    height: 220px;
+    height: 318px;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -686,7 +701,7 @@ header {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .blocMenu .blocNom {
     height: 80%;
   }
@@ -701,20 +716,24 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media screen and (min-width: 1281px) {
   .blocMenu .blocPrix {
-    height: 20%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .blocMenu .blocPrix {
-    height: 20%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -738,13 +757,14 @@ header {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .blocMenu .box {
     height: 0;
     width: 100%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -773,12 +793,14 @@ header {
 @media screen and (min-width: 1281px) {
   .blocMenu:hover .box {
     width: 100%;
+    height: 40%;
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .blocMenu:hover .box {
     width: 100%;
+    height: 25%;
   }
 }
 
@@ -800,7 +822,7 @@ header {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .blocMenu h2,
   .blocMenu p {
     margin-left: 0px;
@@ -814,8 +836,8 @@ header {
 }
 
 hr {
-  position: relative;
-  right: 150px;
+  position: absolute;
+  left: calc(5%);
   border: none;
   height: 5px;
   width: 40px;
@@ -825,13 +847,17 @@ hr {
 
 @media screen and (min-width: 1281px) {
   hr {
+    position: relative;
     right: 0px;
+    left: 0px;
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   hr {
+    position: relative;
     right: 0px;
+    left: 0px;
   }
 }
 
@@ -868,7 +894,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .commandes button {
     width: 20%;
   }
@@ -888,7 +914,7 @@ footer {
   padding-left: 5%;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 760px) {
   .listeFooter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -937,6 +963,11 @@ footer {
 
 .listeFooter .fas {
   width: 25px;
+}
+
+.listeFooter a {
+  color: white;
+  text-decoration: none;
 }
 
 /* #endregion */
