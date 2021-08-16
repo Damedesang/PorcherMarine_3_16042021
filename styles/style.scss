@@ -340,23 +340,28 @@ header {
         font-weight: bold;
         font-size: 20px;
         margin-top: 10px;
+        font-family:$policeTexte;
     }
 
     .nouveau {
         background-color: $couleurTertiaire;
         position: absolute;
-        margin-top: 2%;
-        margin-left: 78%;
+        top: 2%;
+        right: 5%;
         padding: 5px;
         border-radius: 3px;
+        width: 95px;
 
         P {
+            text-align: center;
             font-weight: bold;
+            color: darken($couleurTertiaire,40%);
         }
     }
 
     a {
         text-decoration: none;
+        color: black;
     }
 }
 
@@ -588,7 +593,7 @@ header {
 
     h2,
     p {
-        margin-top: 2px;
+        margin-top: 8px;
         margin-left: 15px;
         white-space:nowrap;
         overflow : hidden;
