@@ -650,8 +650,6 @@ header {
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 8px 15px #636161;
           box-shadow: 0px 8px 15px #636161;
-  -webkit-animation: apparitionMenuDivers 3s;
-          animation: apparitionMenuDivers 3s;
 }
 
 @media screen and (min-width: 1281px) {
@@ -688,7 +686,7 @@ header {
             align-items: center;
     text-align: center;
     width: 30%;
-    height: 318px;
+    height: 318px !important;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -749,7 +747,7 @@ header {
   height: 100%;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  display: none;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 1281px) {
@@ -776,7 +774,7 @@ header {
 .blocMenu:hover .box {
   width: 25%;
   height: 100%;
-  display: block;
+  visibility: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -791,14 +789,14 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #99E2D0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 @media screen and (min-width: 1281px) {
   .blocMenu:hover .box {
-    width: 100%;
-    height: 40%;
+    width: 15%;
+    height: 30%;
   }
 }
 
@@ -809,8 +807,18 @@ header {
   }
 }
 
-.blocMenu h2,
-.blocMenu p {
+.blocMenu:hover .box .fas {
+  color: white;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+h2,
+p {
   margin-top: 8px;
   margin-left: 15px;
   white-space: nowrap;
@@ -819,8 +827,8 @@ header {
 }
 
 @media screen and (min-width: 1281px) {
-  .blocMenu h2,
-  .blocMenu p {
+  h2,
+  p {
     margin-left: 0px;
     white-space: normal;
     overflow: visible;
@@ -828,15 +836,15 @@ header {
 }
 
 @media screen and (min-width: 760px) {
-  .blocMenu h2,
-  .blocMenu p {
+  h2,
+  p {
     margin-left: 0px;
     white-space: normal;
     overflow: visible;
   }
 }
 
-.blocMenu h2 {
+h2 {
   margin-bottom: 0px;
 }
 
@@ -1025,6 +1033,16 @@ section {
   background-color: #99E2D0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+.starter__menu:hover .anim__cercle .fas {
+  color: white;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 /* #endregion */
