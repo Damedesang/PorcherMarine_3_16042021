@@ -217,8 +217,8 @@ header {
   width: 50%;
   color: white;
   border: none;
-  -webkit-box-shadow: 0 5px 5px 0 black;
-          box-shadow: 0 5px 5px 0 black;
+  -webkit-box-shadow: 0 5px 5px 0 grey;
+          box-shadow: 0 5px 5px 0 grey;
 }
 
 @media screen and (min-width: 1281px) {
@@ -235,8 +235,8 @@ header {
 
 #partie1 .explication button:hover {
   opacity: 0.8;
-  -webkit-box-shadow: 0 7px 7px 0 black;
-          box-shadow: 0 7px 7px 0 black;
+  -webkit-box-shadow: 0 7px 7px 0 #343434;
+          box-shadow: 0 7px 7px 0 #343434;
 }
 
 #partie1 .localisation {
@@ -558,8 +558,8 @@ header {
 
 .menus .titresMenu .favorisMenu {
   position: absolute;
-  left: 85%;
-  top: 5px;
+  right: 5%;
+  top: 25%;
 }
 
 .menus .titresMenu h1 {
@@ -883,14 +883,14 @@ hr {
   width: 200px !important;
   color: white;
   border: none;
-  -webkit-box-shadow: 0 5px 5px 0 #d8d72b;
-          box-shadow: 0 5px 5px 0 #d8d72b;
+  -webkit-box-shadow: 0 7px 7px 0 grey;
+          box-shadow: 0 7px 7px 0 grey;
 }
 
 .commandes button:hover {
   opacity: 0.8;
-  -webkit-box-shadow: 0 7px 7px 0 #d8d70b;
-          box-shadow: 0 7px 7px 0 #d8d70b;
+  -webkit-box-shadow: 0 7px 7px 0 #343434;
+          box-shadow: 0 7px 7px 0 #343434;
 }
 
 @media screen and (min-width: 1281px) {

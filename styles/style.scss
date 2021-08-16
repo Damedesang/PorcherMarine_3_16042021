@@ -130,7 +130,7 @@ header {
             width: 50%;
             color: white;
             border: none;
-            box-shadow: 0 5px 5px 0 rgb(0, 0, 0 / 10%);
+            box-shadow: 0 5px 5px 0 grey;
             @include media-min("desktop") {
                 width: 20%;
         
@@ -141,7 +141,7 @@ header {
             }
             &:hover {
                 opacity: 0.8;
-                box-shadow: 0 7px 7px 0 rgb(0, 0, 0 / 50%);
+                box-shadow: 0 7px 7px 0 darken(grey, 30%);
             }
         }
     }
@@ -422,8 +422,8 @@ header {
 
         .favorisMenu {
             position: absolute;
-            left: 85%;
-            top: 5px;
+            right: 5%;
+            top:25%;
         }
 
         h1 {
@@ -651,11 +651,10 @@ hr {
         width: 200px !important;
         color: white;
         border: none;
-        box-shadow: 0 5px 5px 0 rgb(216, 215, 215 / 5%); //#d8d7d7 couleur voulu
-
+        box-shadow: 0 7px 7px 0 grey;
         &:hover {
             opacity: 0.8;
-            box-shadow: 0 7px 7px 0 rgb(216, 215, 215 / 20%);
+            box-shadow: 0 7px 7px 0 darken(grey, 30%);
         }
 
         @include media-min("desktop") {
