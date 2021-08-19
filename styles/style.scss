@@ -8,7 +8,7 @@ body {
     max-width: 1920px;
     min-width: 400px;
     margin: auto;
-    font-family: "FontAwesome";
+   
 
     .loaderTotal {
 
@@ -16,7 +16,8 @@ body {
         justify-content: center;
         animation: loaderDisparait 1s 3s both;
         position: relative;
-        top: 576px;
+        top: 250px;
+        max-height: 500px;
 
         .fas {
             display: flex;
@@ -56,6 +57,12 @@ header {
     top: 21px;
     left: 8%;
     font-size: 1.5rem;
+    color:black;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .logoHeader {
@@ -328,7 +335,7 @@ header {
     .favoris {
         left: 85%;
         position: absolute;
-        margin-top: -40px;
+        margin-top: -40px;overflow:hidden;
 
         .far:hover{
             animation: menuApparition 3.5s both;
@@ -432,7 +439,7 @@ header {
             right: 5%;
             top:25%;
             .far{
-                background-color:linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire); ;
+                background-color:linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
                 font-family: "Font Awesome 5 Free"; 
                 content: "\f004";
                 background-clip:text;
