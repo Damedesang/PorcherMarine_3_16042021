@@ -8,6 +8,7 @@ body {
     max-width: 1920px;
     min-width: 400px;
     margin: auto;
+    font-family: "FontAwesome";
 
     .loaderTotal {
 
@@ -78,6 +79,7 @@ header {
 #contenuIndex {
     width: 100%;
     opacity: 0;
+    margin-top:-305px;
     animation: menuApparition 3s 3.5s both;
 
     h1 {
@@ -118,6 +120,7 @@ header {
 
         p,
         h1 {
+            white-space: normal;
             margin-left: 5%;
             margin-right: 5%;
         }
@@ -326,6 +329,13 @@ header {
         left: 85%;
         position: absolute;
         margin-top: -40px;
+
+        .far:hover{
+            animation: menuApparition 3.5s both;
+            background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+            background-clip:text;
+            color:transparent;
+        }
     }
 
     figure {
@@ -421,6 +431,14 @@ header {
             position: absolute;
             right: 5%;
             top:25%;
+
+            .far:hover{
+                font-family: "FontAwesome";
+                content: "f004";
+                animation: menuApparition 3.5s both;
+                background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+                background-clip:text;
+            }
         }
 
         h1 {

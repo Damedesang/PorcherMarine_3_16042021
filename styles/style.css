@@ -81,6 +81,7 @@ body {
   max-width: 1920px;
   min-width: 400px;
   margin: auto;
+  font-family: "FontAwesome";
 }
 
 body .loaderTotal {
@@ -162,6 +163,7 @@ header {
 #contenuIndex {
   width: 100%;
   opacity: 0;
+  margin-top: -305px;
   -webkit-animation: menuApparition 3s 3.5s both;
           animation: menuApparition 3s 3.5s both;
 }
@@ -204,6 +206,7 @@ header {
 
 #partie1 .explication p,
 #partie1 .explication h1 {
+  white-space: normal;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -470,6 +473,15 @@ header {
   margin-top: -40px;
 }
 
+#partie3 .favoris .far:hover {
+  -webkit-animation: menuApparition 3.5s both;
+          animation: menuApparition 3.5s both;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  background-clip: text;
+  color: transparent;
+}
+
 #partie3 figure {
   padding: 0px;
   margin: 0px;
@@ -557,6 +569,16 @@ header {
   position: absolute;
   right: 5%;
   top: 25%;
+}
+
+.menus .titresMenu .favorisMenu .far:hover {
+  font-family: "FontAwesome";
+  content: "f004";
+  -webkit-animation: menuApparition 3.5s both;
+          animation: menuApparition 3.5s both;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  background-clip: text;
 }
 
 .menus .titresMenu h1 {
