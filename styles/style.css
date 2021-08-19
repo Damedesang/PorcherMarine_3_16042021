@@ -161,8 +161,6 @@ header {
 /* #region Contenu Index */
 #contenuIndex {
   width: 100%;
-  position: relative;
-  bottom: 305px;
   opacity: 0;
   -webkit-animation: menuApparition 3s 3.5s both;
           animation: menuApparition 3s 3.5s both;
@@ -534,7 +532,6 @@ header {
 }
 
 .menus h2 {
-  margin-left: 5%;
   margin-bottom: 0px;
 }
 
@@ -650,6 +647,8 @@ header {
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 8px 15px #636161;
           box-shadow: 0px 8px 15px #636161;
+  -webkit-animation: apparitionMenuDivers 9s;
+          animation: apparitionMenuDivers 9s;
 }
 
 @media screen and (min-width: 1281px) {
@@ -817,8 +816,42 @@ header {
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
-h2,
-p {
+.bM1 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.bM2 {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+.bM3 {
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+}
+
+.bM4 {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.bM5 {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.bM6 {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+.bM7 {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+h2, p {
   margin-top: 8px;
   margin-left: 15px;
   white-space: nowrap;
@@ -827,8 +860,7 @@ p {
 }
 
 @media screen and (min-width: 1281px) {
-  h2,
-  p {
+  h2, p {
     margin-left: 0px;
     white-space: normal;
     overflow: visible;
@@ -836,8 +868,7 @@ p {
 }
 
 @media screen and (min-width: 760px) {
-  h2,
-  p {
+  h2, p {
     margin-left: 0px;
     white-space: normal;
     overflow: visible;
@@ -981,68 +1012,6 @@ footer {
 .listeFooter a {
   color: white;
   text-decoration: none;
-}
-
-/* #endregion */
-/* #region Test */
-section {
-  width: 20%;
-  margin: auto;
-}
-
-.starter__menu {
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.starter__menu .description__plat {
-  width: 85%;
-  color: blue;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.starter__menu .prix__plat {
-  width: 15%;
-  margin-left: 5px;
-}
-
-.starter__menu .anim__cercle {
-  background-color: #99E2D0;
-  width: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.starter__menu:hover .anim__cercle {
-  width: 30%;
-  background-color: #99E2D0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.starter__menu:hover .anim__cercle .fas {
-  color: white;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 /* #endregion */

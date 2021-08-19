@@ -77,8 +77,6 @@ header {
 
 #contenuIndex {
     width: 100%;
-    position: relative;
-    bottom: 305px;
     opacity: 0;
     animation: menuApparition 3s 3.5s both;
 
@@ -403,7 +401,6 @@ header {
     position: relative;
 
     h2 {
-        margin-left: 5%;
         margin-bottom: 0px;
 
         @include media-min("desktop") {
@@ -472,7 +469,6 @@ header {
     }
 }
 
-
 .blocMenu {
     background-color: white;
     border-radius: 15px;
@@ -484,7 +480,7 @@ header {
     font-family: $policeTexte;
     margin-bottom: 20px;
     box-shadow: 0px 8px 15px #636161;
-    // animation: apparitionMenuDivers 3s;
+    animation: apparitionMenuDivers 9s;
 
 
     @include media-min("desktop") {
@@ -601,33 +597,53 @@ header {
           
 }
 
-    h2,
-    p {
-        margin-top: 8px;
-        margin-left: 15px;
-        white-space:nowrap;
-        overflow : hidden;
-        text-overflow: ellipsis;
+.bM1{
+    animation-duration: 3s;
+}
+.bM2{
+    animation-duration: 6s ;
+}
+.bM3{
+    animation-duration: 9s;
+}
+.bM4{
+    animation-duration: 2s;
+}
+.bM5{
+    animation-duration: 4s;
+}
+.bM6{
+    animation-duration: 6s;
+}
+.bM7{
+    animation-duration: 8s;
+}
 
-        @include media-min("desktop") {
-            margin-left: 0px;
-            white-space:normal;
-            overflow : visible;
-        }
+h2,p {
+    margin-top: 8px;
+    margin-left: 15px;
+    white-space:nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
 
-        @include media-min("tablette") {
-            margin-left: 0px;
-            white-space:normal;
-            overflow : visible;
+    @include media-min("desktop") {
+        margin-left: 0px;
+        white-space:normal;
+        overflow : visible;
+    }
+
+    @include media-min("tablette") {
+        margin-left: 0px;
+        white-space:normal;
+        overflow : visible;
+
+    }
+}
     
-        }
-    }
 
-    h2 {
-        margin-bottom: 0px;
-    }
-
-
+h2 {
+    margin-bottom: 0px;
+}
 
 hr {
     position:absolute;
@@ -731,50 +747,4 @@ footer {
 
 }
 
-/* #endregion */
-
-
-/* #region Test */
-section {
-    width: 20%;
-    margin:auto;
-}
-.starter__menu {
-    border: 1px solid black;
-    display: flex;
-
-
-    .description__plat {
-        width: 85%;
-        color: blue;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    .prix__plat{
-        width: 15%;
-        margin-left: 5px;
-    }
-
-    .anim__cercle {
-        background-color: $couleurTertiaire;
-        width: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    &:hover .anim__cercle {
-        width:30%;
-        background-color: $couleurTertiaire;
-        transition:all 1s ease;
-        .fas{
-            color:white;
-            transform: rotate(360deg);
-            transition: transform 500ms ease-in-out;
-        }
-    
-    }
-}
 /* #endregion */
