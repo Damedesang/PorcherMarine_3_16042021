@@ -431,13 +431,19 @@ header {
             position: absolute;
             right: 5%;
             top:25%;
+            .far{
+                background-color:linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire); ;
+                font-family: "Font Awesome 5 Free"; 
+                content: "\f004";
+                background-clip:text;
+            }
 
             .far:hover{
-                font-family: "FontAwesome";
-                content: "f004";
-                animation: menuApparition 3.5s both;
-                background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900; 
+                content: "\f004";
                 background-clip:text;
+                color:transparent;
             }
         }
 
