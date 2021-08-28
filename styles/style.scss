@@ -335,13 +335,20 @@ header {
     .favoris {
         left: 85%;
         position: absolute;
-        margin-top: -40px;overflow:hidden;
+        margin-top: -40px;
+
+        .far{
+            background : linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+            color:transparent;
+            background-clip:text;
+            -webkit-background-clip: text;
+        }
 
         .far:hover{
-            animation: menuApparition 3.5s both;
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
-            background-clip:text;
             color:transparent;
+            background-clip:text;
+            -webkit-background-clip: text;
         }
     }
 
@@ -439,18 +446,17 @@ header {
             right: 5%;
             top:25%;
             .far{
-                background-color:linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
-                font-family: "Font Awesome 5 Free"; 
-                content: "\f004";
-                background-clip:text;
-            }
-
-            .far:hover{
-                font-family: "Font Awesome 5 Free"; 
-                font-weight: 900; 
-                content: "\f004";
-                background-clip:text;
+                background : linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
                 color:transparent;
+                background-clip:text;
+                -webkit-background-clip: text;
+            }
+    
+            .far:hover{
+                background: linear-gradient(180deg, linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire), white);
+                color:transparent;
+                background-clip:text;
+                -webkit-background-clip: text;
             }
         }
 
