@@ -107,6 +107,36 @@
 }
 
 /* #endregion */
+/* #region Animation Apparition des Menus */
+@keyframes apparitionMenuDivers {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* #endregion */
+/* #region Animation Apparition des Favoris */
+@-webkit-keyframes apparitionCoeurs {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes apparitionCoeurs {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* #endregion */
 /* #region Généralités et Loader */
 body {
   margin: 0px;
@@ -578,6 +608,28 @@ header {
   -webkit-background-clip: text;
 }
 
+#partie3 .favoris .fas {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+}
+
+#partie3 .favoris .fas:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-animation: apparitionCoeurs 3s;
+          animation: apparitionCoeurs 3s;
+}
+
 #partie3 figure {
   padding: 0px;
   margin: 0px;
@@ -681,6 +733,28 @@ header {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.menus .titresMenu .favorisMenu .fas {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.menus .titresMenu .favorisMenu .fas:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-animation: apparitionCoeurs 3s;
+          animation: apparitionCoeurs 3s;
 }
 
 .menus .titresMenu h1 {

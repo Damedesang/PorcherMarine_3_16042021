@@ -387,6 +387,25 @@ header {
             background-clip: text;
             -webkit-background-clip: text;
         }
+
+        .fas {
+            background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            position: absolute;
+            left: 0px;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .fas:hover {
+            background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: apparitionCoeurs 3s;
+        }
     }
 
     figure {
@@ -495,6 +514,25 @@ header {
                 color: transparent;
                 background-clip: text;
                 -webkit-background-clip: text;
+            }
+
+            .fas {
+                background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                position: absolute;
+                left: 0px;
+                z-index: 1;
+                opacity: 0;
+            }
+
+            .fas:hover {
+                background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                animation: apparitionCoeurs 3s;
             }
         }
 
