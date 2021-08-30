@@ -1,7 +1,13 @@
+/* #region Breakpoints et Mixins */
+
+/* #region Breakpoints */
 $breakpoints: ("tablette":760px,
     "desktop":1281px,
 );
 
+/* #endregion */
+
+/* #region Mixins */
 @mixin media-min($key) {
     @media screen and (min-width: map-get($breakpoints, $key)) {
         & {
@@ -10,12 +16,24 @@ $breakpoints: ("tablette":760px,
     }
 }
 
+/* #endregion */
 
+/* #endregion */
+
+/* #region Variables */
+
+/* #region Variables des couleurs */
 $couleurPrimaire : #9356DC;
 $couleurSecondaire : #FF79DA;
 $couleurTertiaire : #99E2D0;
 $grisclair :rgb(243, 243, 243);
 $grisfoncee: rgb(216, 215, 215);
 $grisnoir:rgb(59, 53, 53);
+/* #endregion */
+
+/* #region Variables des polices d'écritures */
 $policeTitres : "Shrikhand";
 $policeTexte : "Roboto";
+/* #endregion */
+
+/* #endregion */
