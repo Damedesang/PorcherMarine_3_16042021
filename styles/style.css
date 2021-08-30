@@ -318,6 +318,11 @@ header {
   border: none;
   -webkit-box-shadow: 0 5px 5px 0 grey;
           box-shadow: 0 5px 5px 0 grey;
+  font-family: "Roboto";
+  font-weight: bold;
+  white-space: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 1281px) {
@@ -811,6 +816,11 @@ header {
   width: 50%;
   color: white;
   border-color: white;
+  font-family: "Roboto";
+  font-weight: bold;
+  white-space: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* #endregion */

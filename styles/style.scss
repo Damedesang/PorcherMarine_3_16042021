@@ -158,6 +158,11 @@ header {
             color: white;
             border: none;
             box-shadow: 0 5px 5px 0 grey;
+            font-family: $policeTexte;
+            font-weight: bold;
+            white-space: normal;
+            padding-top: 10px;
+            padding-bottom: 10px;
 
             @include media-min("desktop") {
                 width: 20%;
@@ -167,6 +172,7 @@ header {
             @include media-min("tablette") {
                 width: 200px;
             }
+
 
             &:hover {
                 opacity: 0.8;
@@ -585,6 +591,11 @@ header {
         width: 50%;
         color: white;
         border-color: white;
+        font-family: $policeTexte;
+        font-weight: bold;
+        white-space: normal;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
 }
