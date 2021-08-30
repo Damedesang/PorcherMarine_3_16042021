@@ -76,11 +76,15 @@ header {
     justify-content: center;
 
     img {
-        width: 40%;
+        width: 70%;
 
         @include media-min("desktop") {
             width: 494px;
             height: 86px;
+        }
+
+        @include media-min("tablette") {
+            width: 40%;
         }
     }
 }
@@ -228,6 +232,18 @@ header {
         margin-right: auto;
         margin-top: 20px;
         position: relative;
+
+
+    }
+
+    .restaurant:hover,
+    .choix:hover,
+    .degustez:hover {
+        background-color: lighten($couleurPrimaire, 30%);
+
+        .fas {
+            color: $couleurPrimaire;
+        }
     }
 
     p {
@@ -375,7 +391,7 @@ header {
         margin-top: -40px;
 
         .far {
-            background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+            background: black;
             color: transparent;
             background-clip: text;
             -webkit-background-clip: text;
@@ -405,6 +421,7 @@ header {
             background-clip: text;
             -webkit-background-clip: text;
             animation: apparitionCoeurs 3s;
+            opacity: 1;
         }
     }
 
@@ -431,9 +448,18 @@ header {
         width: 95px;
 
         P {
-            text-align: center;
+
             font-weight: bold;
             color: darken($couleurTertiaire, 40%);
+
+            @include media-min("desktop") {
+                text-align: center;
+
+            }
+
+            @include media-min("tablette") {
+                text-align: center;
+            }
         }
     }
 
@@ -503,7 +529,7 @@ header {
             top: 25%;
 
             .far {
-                background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
+                background: black;
                 color: transparent;
                 background-clip: text;
                 -webkit-background-clip: text;
@@ -533,6 +559,7 @@ header {
                 background-clip: text;
                 -webkit-background-clip: text;
                 animation: apparitionCoeurs 3s;
+                opacity: 1;
             }
         }
 

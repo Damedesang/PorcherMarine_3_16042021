@@ -227,13 +227,19 @@ header {
 }
 
 .logoHeader img {
-  width: 40%;
+  width: 70%;
 }
 
 @media screen and (min-width: 1281px) {
   .logoHeader img {
     width: 494px;
     height: 86px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .logoHeader img {
+    width: 40%;
   }
 }
 
@@ -402,6 +408,18 @@ header {
   margin-right: auto;
   margin-top: 20px;
   position: relative;
+}
+
+#partie2 .restaurant:hover,
+#partie2 .choix:hover,
+#partie2 .degustez:hover {
+  background-color: #e4d5f6;
+}
+
+#partie2 .restaurant:hover .fas,
+#partie2 .choix:hover .fas,
+#partie2 .degustez:hover .fas {
+  color: #9356DC;
 }
 
 #partie2 p {
@@ -593,8 +611,7 @@ header {
 }
 
 #partie3 .favoris .far {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  background: black;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -628,6 +645,7 @@ header {
   -webkit-background-clip: text;
   -webkit-animation: apparitionCoeurs 3s;
           animation: apparitionCoeurs 3s;
+  opacity: 1;
 }
 
 #partie3 figure {
@@ -654,9 +672,20 @@ header {
 }
 
 #partie3 .nouveau P {
-  text-align: center;
   font-weight: bold;
   color: #278870;
+}
+
+@media screen and (min-width: 1281px) {
+  #partie3 .nouveau P {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #partie3 .nouveau P {
+    text-align: center;
+  }
 }
 
 #partie3 a {
@@ -720,8 +749,7 @@ header {
 }
 
 .menus .titresMenu .favorisMenu .far {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  background: black;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -755,6 +783,7 @@ header {
   -webkit-background-clip: text;
   -webkit-animation: apparitionCoeurs 3s;
           animation: apparitionCoeurs 3s;
+  opacity: 1;
 }
 
 .menus .titresMenu h1 {
