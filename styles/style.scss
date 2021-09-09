@@ -29,7 +29,6 @@ body {
             top: 120px;
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             color: transparent;
-            //background-clip: text;
             -webkit-background-clip: text;
         }
 
@@ -397,21 +396,21 @@ header {
         .far {
             background: black;
             color: transparent;
-            //background-clip: text;
+
             -webkit-background-clip: text;
         }
 
         .far:hover {
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             color: transparent;
-            //background-clip: text;
+
             -webkit-background-clip: text;
         }
 
         .fas {
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             color: transparent;
-            //background-clip: text;
+
             -webkit-background-clip: text;
             position: absolute;
             left: 0px;
@@ -422,7 +421,7 @@ header {
         .fas:hover {
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             color: transparent;
-            //background-clip: text;
+
             -webkit-background-clip: text;
             animation: apparitionCoeurs 3s;
             opacity: 1;
@@ -537,21 +536,18 @@ header {
             .far {
                 background: black;
                 color: transparent;
-                //background-clip: text;
                 -webkit-background-clip: text;
             }
 
             .far:hover {
-                background: linear-gradient(180deg, linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire), white);
+                background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
                 color: transparent;
-                //background-clip: text;
                 -webkit-background-clip: text;
             }
 
             .fas {
                 background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
                 color: transparent;
-                //background-clip: text;
                 -webkit-background-clip: text;
                 position: absolute;
                 left: 0px;
@@ -562,7 +558,6 @@ header {
             .fas:hover {
                 background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
                 color: transparent;
-                //background-clip: text;
                 -webkit-background-clip: text;
                 animation: apparitionCoeurs 3s;
                 opacity: 1;
@@ -626,6 +621,8 @@ header {
         flex-direction: row;
         align-content: space-between;
     }
+
+
 }
 
 .blocMenu {
@@ -640,6 +637,14 @@ header {
     margin-bottom: 20px;
     box-shadow: 0px 8px 15px #636161;
     animation: apparitionMenuDivers 9s;
+
+    &:hover {
+        h2 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
 
 
     @include media-min("desktop") {
@@ -682,7 +687,11 @@ header {
         h2 {
             font-size: 18px;
             font-weight: bold;
+
+
         }
+
+
 
         p {
             font-size: 15px;
@@ -764,6 +773,8 @@ header {
             transform: rotate(360deg);
             transition: transform 500ms ease-in-out;
         }
+
+
     }
 
 }
@@ -796,7 +807,6 @@ header {
     animation-duration: 8s;
 }
 
-h2,
 p {
     margin-top: 8px;
     margin-left: 15px;
@@ -818,10 +828,25 @@ p {
     }
 }
 
-
 h2 {
+    margin-top: 8px;
+    margin-left: 15px;
     margin-bottom: 0px;
+
+    @include media-min("desktop") {
+        margin-left: 0px;
+        white-space: normal;
+        overflow: visible;
+    }
+
+    @include media-min("tablette") {
+        margin-left: 0px;
+        white-space: normal;
+        overflow: visible;
+
+    }
 }
+
 
 hr {
     position: absolute;

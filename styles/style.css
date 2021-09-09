@@ -744,8 +744,8 @@ header {
 }
 
 .menus .titresMenu .favorisMenu .far:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(linear-gradient(180deg, #FF79DA, #9356DC)), to(white));
-  background: linear-gradient(180deg, linear-gradient(180deg, #FF79DA, #9356DC), white);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: transparent;
   -webkit-background-clip: text;
 }
@@ -878,6 +878,12 @@ header {
           box-shadow: 0px 8px 15px #636161;
   -webkit-animation: apparitionMenuDivers 9s;
           animation: apparitionMenuDivers 9s;
+}
+
+.blocMenu:hover h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 1281px) {
@@ -1089,7 +1095,6 @@ header {
           animation-duration: 8s;
 }
 
-h2,
 p {
   margin-top: 8px;
   margin-left: 15px;
@@ -1099,7 +1104,6 @@ p {
 }
 
 @media screen and (min-width: 1281px) {
-  h2,
   p {
     margin-left: 0px;
     white-space: normal;
@@ -1108,7 +1112,6 @@ p {
 }
 
 @media screen and (min-width: 760px) {
-  h2,
   p {
     margin-left: 0px;
     white-space: normal;
@@ -1117,7 +1120,25 @@ p {
 }
 
 h2 {
+  margin-top: 8px;
+  margin-left: 15px;
   margin-bottom: 0px;
+}
+
+@media screen and (min-width: 1281px) {
+  h2 {
+    margin-left: 0px;
+    white-space: normal;
+    overflow: visible;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  h2 {
+    margin-left: 0px;
+    white-space: normal;
+    overflow: visible;
+  }
 }
 
 hr {
