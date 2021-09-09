@@ -107,17 +107,6 @@
 }
 
 /* #endregion */
-/* #region Animation Apparition des Menus */
-@keyframes apparitionMenuDivers {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* #endregion */
 /* #region Animation Apparition des Favoris */
 @-webkit-keyframes apparitionCoeurs {
   0% {
@@ -178,7 +167,6 @@ body .loaderTotal .fas {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -199,7 +187,6 @@ header {
   -webkit-box-shadow: 0 0 15px 0 #636161;
           box-shadow: 0 0 15px 0 #636161;
   position: relative;
-  height: 85px;
   background-color: white;
   z-index: 1;
 }
@@ -275,7 +262,6 @@ header {
 #contenuIndex h2,
 #contenuIndex p {
   font-family: "Roboto";
-  font-weight: bold;
 }
 
 /* #region Partie 1 */
@@ -618,7 +604,6 @@ header {
 #partie3 .favoris .far {
   background: black;
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -626,7 +611,6 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -634,7 +618,6 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   position: absolute;
   left: 0px;
@@ -646,7 +629,6 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-animation: apparitionCoeurs 3s;
           animation: apparitionCoeurs 3s;
@@ -727,6 +709,8 @@ header {
 
 .menus h2 {
   margin-bottom: 0px;
+  font-family: "Roboto";
+  font-weight: normal;
 }
 
 @media screen and (min-width: 1281px) {
@@ -756,7 +740,6 @@ header {
 .menus .titresMenu .favorisMenu .far {
   background: black;
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -764,7 +747,6 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(linear-gradient(180deg, #FF79DA, #9356DC)), to(white));
   background: linear-gradient(180deg, linear-gradient(180deg, #FF79DA, #9356DC), white);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -772,7 +754,6 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   position: absolute;
   left: 0px;
@@ -784,7 +765,6 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-animation: apparitionCoeurs 3s;
           animation: apparitionCoeurs 3s;
@@ -956,6 +936,15 @@ header {
   .blocMenu .blocNom {
     height: 80%;
   }
+}
+
+.blocMenu .blocNom h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blocMenu .blocNom p {
+  font-size: 15px;
 }
 
 .blocMenu .blocPrix {

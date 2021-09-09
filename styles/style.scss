@@ -29,7 +29,7 @@ body {
             top: 120px;
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             color: transparent;
-            background-clip: text;
+            //background-clip: text;
             -webkit-background-clip: text;
         }
 
@@ -53,7 +53,6 @@ header {
     padding: 16px;
     box-shadow: 0 0 15px 0 #636161;
     position: relative;
-    height: 85px;
     background-color: white;
     z-index: 1;
 }
@@ -118,7 +117,6 @@ header {
     h2,
     p {
         font-family: $policeTexte;
-        font-weight: bold;
     }
 
 }
@@ -399,21 +397,21 @@ header {
         .far {
             background: black;
             color: transparent;
-            background-clip: text;
+            //background-clip: text;
             -webkit-background-clip: text;
         }
 
         .far:hover {
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             color: transparent;
-            background-clip: text;
+            //background-clip: text;
             -webkit-background-clip: text;
         }
 
         .fas {
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             color: transparent;
-            background-clip: text;
+            //background-clip: text;
             -webkit-background-clip: text;
             position: absolute;
             left: 0px;
@@ -424,7 +422,7 @@ header {
         .fas:hover {
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             color: transparent;
-            background-clip: text;
+            //background-clip: text;
             -webkit-background-clip: text;
             animation: apparitionCoeurs 3s;
             opacity: 1;
@@ -514,6 +512,8 @@ header {
 
     h2 {
         margin-bottom: 0px;
+        font-family: $policeTexte;
+        font-weight: normal;
 
         @include media-min("desktop") {
             text-align: center;
@@ -537,21 +537,21 @@ header {
             .far {
                 background: black;
                 color: transparent;
-                background-clip: text;
+                //background-clip: text;
                 -webkit-background-clip: text;
             }
 
             .far:hover {
                 background: linear-gradient(180deg, linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire), white);
                 color: transparent;
-                background-clip: text;
+                //background-clip: text;
                 -webkit-background-clip: text;
             }
 
             .fas {
                 background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
                 color: transparent;
-                background-clip: text;
+                //background-clip: text;
                 -webkit-background-clip: text;
                 position: absolute;
                 left: 0px;
@@ -562,7 +562,7 @@ header {
             .fas:hover {
                 background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
                 color: transparent;
-                background-clip: text;
+                //background-clip: text;
                 -webkit-background-clip: text;
                 animation: apparitionCoeurs 3s;
                 opacity: 1;
@@ -677,6 +677,15 @@ header {
 
         @include media-min("tablette") {
             height: 80%;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 15px;
         }
     }
 
