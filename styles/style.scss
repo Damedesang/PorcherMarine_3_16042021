@@ -5,10 +5,18 @@
 body {
     margin: 0px;
     background-color: #f3f3f3;
-    max-width: 1920px;
-    min-width: 400px;
+    max-width: 759px;
     margin: auto;
     animation: taillebody 12s;
+
+    @include media-min("desktop") {
+        min-width: 1281px !important;
+    }
+
+    @include media-min("tablette") {
+        min-width: 760px !important;
+        max-width: 1280px !important;
+    }
 
     .loaderTotal {
         display: flex;
@@ -20,21 +28,20 @@ body {
         transform: translate(-50%, -50%);
         max-height: 500px;
 
-
         .fas {
             display: flex;
             justify-content: center;
             position: relative;
-            left: 165px;
-            top: 120px;
+            left: 130px;
+            top: 60px;
             background: linear-gradient(180deg, $couleurSecondaire, $couleurPrimaire);
             color: transparent;
             -webkit-background-clip: text;
         }
 
         #loader {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             border: 3px solid #f3f3f3;
             border-top: 3px dotted $couleurPrimaire;
             border-radius: 50%;
@@ -482,8 +489,16 @@ header {
 /* #region Contenu Menus */
 
 #contenuMenu {
-    width: 100%;
+    width: 96%;
     margin-bottom: 20px;
+
+    @include media-min("desktop") {
+        width: 100%;
+    }
+
+    @include media-min("tablette") {
+        width: 100%;
+    }
 }
 
 /* #region Présentation */
@@ -569,6 +584,7 @@ header {
             font-weight: bold;
             font-family: $policeTitres;
             padding-top: 10px;
+            font-size: 26px;
 
             @include media-min("desktop") {
                 text-align: center;
